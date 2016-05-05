@@ -8,127 +8,129 @@
 
   <link rel="stylesheet" type="text/css" href="reset.css">
   <style type="text/css">
-    html {
-      background-color: white;
-    }
+    @media all {
+      html {
+        background-color: white;
+      }
 
-    body {
-      box-sizing: border-box;
-      /** 8.5 x 11 paper **/
-      height: 1100px;
-      width: 850px;
-      margin: 0 auto;
+      body {
+        box-sizing: border-box;
+        /** 8.5 x 11 paper **/
+        height: 1100px;
+        width: 850px;
+        margin: 0 auto;
 
-      padding: 80px 22px 0 22px;
-      font-family: "futura-pt";
-      color: #2E2E2D;
-      background-color: white;
-    }
-
-
-    .column {
-      height: 100%;
-      float: left;
-      background-color: white;
-    }
-    .column-left {
-      width: 42%;
-      margin-right: 11%;
-    }
-    .column-right {
-      width: 47%;
-    }
-
-    .separator {
-      width: 100%;
-      background-color: #289cd8;
-    }
+        padding: 80px 0 0 0;
+        font-family: "futura-pt";
+        color: #2E2E2D;
+        background-color: white;
+      }
 
 
-    .contact-info {
-      margin-bottom: 38px;
-    }
-    .contact-info .name {
-      text-transform: uppercase;
-      font-size: 100px;
-      font-weight: 400;
-      color: #2E2E2D;
-      padding: 12px 0px 8px 60px;
-      line-height: 0.9;
-      letter-spacing: -3px;
-    }
-    .contact-info .methods {
-      padding-left: 66px;
-    }
-    .contact-info .methods .method:last-child {
-      margin-right: 0;
-    }
-    .contact-info .methods .method {
-      margin-right: 17px;
-      font-size: 12px;
-      font-weight: 300;
-      color: #289cd8;
-    }
-    .contact-info .separator {
-      height: 5px;
-      margin-top: 6px;
-    }
+      .column {
+        height: 100%;
+        float: left;
+        background-color: white;
+      }
+      .column-left {
+        width: 40%;
+        margin-right: 15%;
+      }
+      .column-right {
+        width: 45%;
+      }
+
+      .separator {
+        width: 100%;
+        background-color: #289cd8;
+      }
 
 
-    .skills {
-      margin-top: 30px;
-      padding-left: 66px;
-    }
-    .skills .title, .work .title {
-      color: #f0424b;
-      font-size: 24px;
-      font-weight: 300;
-      line-height: 1.14;
-    }
-    .skills .separator, .work .separator {
-      height: 2px;
-      margin-bottom: 2px;
-    }
-    .skills.skills-development .separator {
-      width: 170px;
-    }
-    .skills.skills-design .separator {
-      width: 112px;
-    }
-    .skills.skills-education .separator {
-      width: 90px;
-    }
-    .skills.skills-independent .separator {
-      width: 171px;
-    }
-    .skills .skill, .work .details, .work .experience {
-      font-size: 13px;
-      margin-bottom: 6px;
-      font-weight: 300;
-      line-height: 1.08;
-    }
-    .skills strong, .work .company-date {
-      font-weight: 400;
-    }
+      .contact-info {
+        margin-bottom: 38px;
+      }
+      .contact-info .name {
+        text-transform: uppercase;
+        font-size: 100px;
+        font-weight: 400;
+        color: #2E2E2D;
+        padding: 12px 0px 8px 60px;
+        line-height: 0.9;
+        letter-spacing: -3px;
+      }
+      .contact-info .methods {
+        padding-left: 66px;
+      }
+      .contact-info .methods .method:last-child {
+        margin-right: 0;
+      }
+      .contact-info .methods .method {
+        margin-right: 17px;
+        font-size: 12px;
+        font-weight: 300;
+        color: #289cd8;
+      }
+      .contact-info .separator {
+        height: 5px;
+        margin-top: 6px;
+      }
 
 
-    .work {
-      margin-bottom: 30px;
-    }
-    .work .title {
-      margin-left: 40px;
-      line-height: 1.3;
-    }
-    .work .details .company-date {
-      display: inline-block;
-      letter-spacing: -0.3px;
-    }
-    .work .details .location {
-      display: inline-block;
-      float: right;
-    }
-    .work .experiences {
-      padding-left: 44px;
+      .skills {
+        margin-top: 30px;
+        padding-left: 66px;
+      }
+      .skills .title, .work .title {
+        color: #f0424b;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 1.14;
+      }
+      .skills .separator, .work .separator {
+        height: 2px;
+        margin-bottom: 2px;
+      }
+      .skills.skills-development .separator {
+        width: 170px;
+      }
+      .skills.skills-design .separator {
+        width: 112px;
+      }
+      .skills.skills-education .separator {
+        width: 90px;
+      }
+      .skills.skills-independent .separator {
+        width: 171px;
+      }
+      .skills .skill, .work .details, .work .experience {
+        font-size: 13px;
+        margin-bottom: 6px;
+        font-weight: 300;
+        line-height: 1.08;
+      }
+      .skills strong, .work .company-date {
+        font-weight: 400;
+      }
+
+
+      .work {
+        margin-bottom: 30px;
+      }
+      .work .title {
+        margin-left: 40px;
+        line-height: 1.3;
+      }
+      .work .details .company-date {
+        display: inline-block;
+        letter-spacing: -0.3px;
+      }
+      .work .details .location {
+        display: inline-block;
+        float: right;
+      }
+      .work .experiences {
+        padding-left: 44px;
+      }
     }
   </style>
 </head>
