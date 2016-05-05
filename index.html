@@ -14,73 +14,126 @@
 
     body {
       box-sizing: border-box;
-      /** 8.5 x 11 **/
+      /** 8.5 x 11 paper **/
       height: 1100px;
       width: 850px;
       margin: 0 auto;
-      padding: 80px 20px 0 20px;
+
+      padding: 80px 22px 0 22px;
       font-family: "futura-pt";
-      background-color: gray;
+      color: #0b0b0b;
+      background-color: white;
     }
 
 
     .column {
-      width: 50%;
       height: 100%;
       float: left;
-      background-color: green;
+      background-color: white;
+    }
+    .column-left {
+      width: 42%;
+      margin-right: 11%;
+    }
+    .column-right {
+      width: 47%;
     }
 
-    .seperator {
+    .separator {
       width: 100%;
-      background-color: blue;
+      background-color: #289cd8;
     }
 
 
+    .contact-info {
+      margin-bottom: 38px;
+    }
     .contact-info .name {
       text-transform: uppercase;
-      font-size: 140px;
+      font-size: 100px;
       font-weight: 400;
+      color: rgb(36,36, 35);
+      padding: 12px 0px 8px 60px;
+      line-height: 0.9;
+      letter-spacing: -3px;
+    }
+    .contact-info .methods {
+      padding-left: 66px;
+    }
+    .contact-info .methods .method:last-child {
+      margin-right: 0;
     }
     .contact-info .methods .method {
-      margin-right: 8px;
+      margin-right: 17px;
+      font-size: 12px;
+      font-weight: 300;
+      color: #289cd8;
     }
-    .contact-info .seperator {
-      height: 7px;
+    .contact-info .separator {
+      height: 5px;
+      margin-top: 6px;
     }
 
 
     .skills {
       margin-top: 30px;
-      padding-left: 70px;
+      padding-left: 66px;
     }
-    .skills .title {
-      color: red;
-      font-size: 36px;
+    .skills .title, .work .title {
+      color: #f0424b;
+      font-size: 24px;
       font-weight: 300;
+      line-height: 1.14;
     }
-    .skills .seperator {
+    .skills .separator, .work .separator {
       height: 2px;
+      margin-bottom: 2px;
     }
-    .skills .skill {
-      font-size: 16px;
-      margin-bottom: 10px;
+    .skills.skills-development .separator {
+      width: 170px;
     }
-    .skills .name {
-      display: inline;
-      font-weight: 400;
+    .skills.skills-design .separator {
+      width: 112px;
     }
-    .skills .content {
-      display: inline;
+    .skills.skills-education .separator {
+      width: 90px;
+    }
+    .skills.skills-independent .separator {
+      width: 171px;
+    }
+    .skills .skill, .work .details, .work .experience {
+      font-size: 13px;
+      margin-bottom: 6px;
       font-weight: 300;
+      line-height: 1.08;
     }
-    .skills strong {
+    .skills strong, .work .company-date {
       font-weight: 400;
+    }
+
+
+    .work {
+      margin-bottom: 30px;
+    }
+    .work .title {
+      margin-left: 40px;
+      line-height: 1.3;
+    }
+    .work .details .company-date {
+      display: inline-block;
+      letter-spacing: -0.3px;
+    }
+    .work .details .location {
+      display: inline-block;
+      float: right;
+    }
+    .work .experiences {
+      padding-left: 44px;
     }
   </style>
 </head>
 <body>
-  <div class="column">
+  <div class="column column-left">
 
     <div class="contact-info">
       <div class="name">Cody Sehl</div>
@@ -89,60 +142,155 @@
         <span class="method">codysehl.net</span>
         <span class="method">(847) 421 0838</span>
       </div>
-      <div class="seperator"></div>
+      <div class="separator"></div>
     </div>
 
-    <div class="skills">
+    <div class="skills skills-development">
       <div class="title">Development Skills</div>
-      <div class="seperator"></div>
+      <div class="separator"></div>
       <div class="skill">
-        <div class="name">Languages:</div>
-        <div class="content">Ruby, C#.NET, Javascript, Java, C++, PHP, SQL, HTML, CSS</div>
+        <strong>Languages:</strong> Ruby, C#.NET, Javascript, Java, C++, PHP, SQL, HTML, CSS
       </div>
       <div class="skill">
-        <div class="name">Frameworks:</div>
-        <div class="content">Ruby on Rails, ASP.Net MVC, Wordpress, Backbone.js</div>
+        <strong>Frameworks:</strong> Ruby on Rails, ASP.Net MVC, Wordpress, Backbone.js
       </div>
       <div class="skill">
-        <div class="name">SCMs:</div>
-        <div class="content">Git, SVN</div>
+        <strong>SCMs:</strong> Git, SVN
       </div>
       <div class="skill">
-        <div class="name">Knowledge of</div>
-        <div class="content">agile methodologies, pair programming, test driven development, object oriented programming</div>
+        <strong>Knowledge of</strong> agile methodologies, pair programming, test driven development, object oriented programming
       </div>
     </div>
 
-    <div class="skills">
+    <div class="skills skills-design">
       <div class="title">Design Skills</div>
-      <div class="seperator"></div>
+      <div class="separator"></div>
       <div class="skill">
-        <div class="name">Software:</div>
-        <div class="content">Adobe Illustrator, Fireworks, Indesign</div>
+        <strong>Software:</strong> Adobe Illustrator, Fireworks, Indesign
       </div>
       <div class="skill">
-        <div class="name">Knowledge of</div>
-        <div class="content">page layout, composition, typography, UI/UX prototyping, user  ow creation, effective language and product copywriting</div>
+        <div class="name"></div>
+          <strong>Knowledge of</strong>page layout, composition, typography, UI/UX prototyping, user  ow creation, effective language and product copywriting
       </div>
     </div>
 
-    <div class="skills">
+    <div class="skills skills-education">
       <div class="title">Education</div>
-      <div class="seperator"></div>
+      <div class="separator"></div>
       <div class="skill">
-        <div class="content">Pursuing a bachelors of science in <strong>computer science</strong>, with a minor in <strong>studio art</strong> at Knox College.</div>
+        Pursuing a bachelors of science in <strong>computer science</strong>, with a minor in <strong>studio art</strong> at Knox College.
       </div>
       <div class="skill">
-        <div class="name">Expected Graduation:</div>
-        <div class="content">May 2015</div>
+        <strong>Expected Graduation:</strong> May 2015
       </div>
       <div class="skill">
-        <div class="name">Current GPA:</div>
-        <div class="content">3.56/4</div>
+          <strong>Current GPA:</strong> 3.56/4
+      </div>
+    </div>
+
+    <div class="skills skills-independent">
+      <div class="title">Independent Work</div>
+      <div class="separator"></div>
+      <div class="skill">
+        — Wrote and bound book on Futura typeface and it’s designer, Paul Renner.
+      </div>
+      <div class="skill">
+        — Created user  ow mock-ups and design documents for independent project to send motivational text messages.
+      </div>
+      <div class="skill">
+        — Recreated assignments from Fundamentals of 2D Design class at Knox College using HTML, CSS, &amp; JS.
       </div>
     </div>
   </div>
-  <div class="column">
+
+
+  <div class="column column-right">
+
+    <div class="work">
+      <div class="title">Creative Intern</div>
+      <div class="separator"></div>
+      <div class="details">
+        <div class="company-date">NGP VAN Inc. (2014 June – August)</div>
+        <div class="location">Washington, D.C.</div>
+      </div>
+      <div class="experiences">
+        <div class="experience">
+          — Designed and implemented invitation, ads, and website for NGP VAN’s  first official marketing event, NGP VAN Next.
+        </div>
+        <div class="experience">
+          — Designed and implemented static web framework to provide consistant styling to changing body of marketing content. Also created the content used within this framework.
+        </div>
+        <div class="experience">
+          — Assited in the creation of a system to quickly deploy marketing pages using the Progress library and Startup Framework.
+        </div>
+        <div class="experience">
+          — Designed and implemented modules for Progress, NGP VAN’s style library based on Twitter Bootstrap.
+        </div>
+        <div class="experience">
+          — Designed and implemented NGP VAN developer portal powering the Democratic National Committee.
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="title">Software Development Intern</div>
+      <div class="separator"></div>
+      <div class="details">
+        <div class="company-date">Pivotal Labs/EMC Corp. — Tracker Team (2013 June – August)</div>
+        <div class="location">Denver, CO</div>
+      </div>
+      <div class="experiences">
+        <div class="experience">
+          — Released version 5 of Tracker’s API using Ruby on Rails with MySql, Memcached, and Delayed Jobs.
+        </div>
+        <div class="experience">
+          — Prototyped and designed user interaction flows for features like blocked stories, markdown integration, story details, and story autosave using Adobe Fireworks.
+        </div>
+        <div class="experience">
+          — Implemented the redesigned front end interface of Pivotal Tracker in Javascript using Backbone.js.
+        </div>
+        <div class="experience">
+          — Debugged and maintained Jenkins continuous integration and deployment environment.
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="title">Software Development Intern</div>
+      <div class="separator"></div>
+      <div class="details">
+        <div class="company-date">Dwolla Inc. (2012 June – August)</div>
+        <div class="location">Des Moines, IA</div>
+      </div>
+      <div class="experiences">
+        <div class="experience">
+          — Developed application used to initiate anonymous transactions along with a team of five others.
+        </div>
+        <div class="experience">
+          — Lead developer on application used to request Dwolla at local businesses using MongoDB’s geolocation feature.
+        </div>
+        <div class="experience">
+          — Maintained a system responsible for all user-to-user and bank-to-bank transactions, using MVC.Net C#.
+        </div>
+      </div>
+    </div>
+
+    <div class="work">
+      <div class="title">Web Editor</div>
+      <div class="separator"></div>
+      <div class="details">
+        <div class="company-date">Knox College — TKS Newspaper (2011 June – Present)</div>
+        <div class="location">Galesburg, IL</div>
+      </div>
+      <div class="experiences">
+        <div class="experience">
+          — Redesigned and migrated The Knox Student website from Django to Wordpress in PHP.
+        </div>
+        <div class="experience">
+          — Implemented professional software practices such as bug tracking, version control, staging environments, and database backups.
+        </div>
+      </div>
+    </div>
 
   </div>
 </body>
